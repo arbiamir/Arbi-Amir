@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { BubbleBackground } from '@/components/bubble-background'
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet'
+import Image from 'next/image'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -507,8 +508,9 @@ export default function Portfolio() {
                 title: 'Military Truck Driving Games',
                 category: 'Simulation / Vehicle',
                 description: 'A realistic military truck simulation game featuring physics-based heavy vehicle controls, off-road terrain challenges, and mission-based gameplay objectives.',
-                tech: ['Unity 3D', 'Vehicle Physics', 'Terrain API'],
+                tech: ['Unity 3D', 'Vehicle Physics', 'C# Scripting', 'AI Traffic System', 'Level Design'],
                 link: 'https://play.google.com/store/apps/details?id=com.gnc.military.truck.simulator.games',
+                image: '/projects/military-truck.png',
               },
               {
                 title: 'Car Racing and Stunt Games',
@@ -516,6 +518,7 @@ export default function Portfolio() {
                 description: 'High-octane racing game with stunt mechanics. Implemented smooth car controllers, ramp physics, and dynamic camera systems for cinematic action.',
                 tech: ['Unity', 'Arcade Physics', 'Mobile Optimization'],
                 link: 'https://play.google.com/store/apps/details?id=com.fg.car.racing.stuntgames',
+                image: '/projects/car-racing.png',
               },
               {
                 title: 'Offroad Bus Driving Game',
@@ -523,6 +526,7 @@ export default function Portfolio() {
                 description: 'Comprehensive bus driving simulator focused on realistic passenger transport, traffic AI navigation, and large vehicle handling on difficult tracks.',
                 tech: ['Unity', 'AI Traffic', 'UI Systems'],
                 link: 'https://play.google.com/store/apps/details?id=com.sg.offroad.bus.driving.game.bus.games.city.bus.game',
+                image: '/projects/offroad-bus.png',
               },
               {
                 title: 'Car Sim Driving Game',
@@ -530,6 +534,7 @@ export default function Portfolio() {
                 description: 'Open world driving experience with emphasis on freedom of exploration, realistic car damage, and environmental interaction.',
                 tech: ['Unity', 'Open World', 'Optimization'],
                 link: 'https://play.google.com/store/apps/details?id=com.fg.open.world.car.game',
+                image: '/projects/open-world-car.png',
               },
             ].map((project, index) => (
               <motion.div
@@ -539,9 +544,23 @@ export default function Portfolio() {
                 className="group h-full"
               >
                 <Card className="h-full border border-border/50 bg-card/40 hover:bg-card/60 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 flex flex-col hover:border-accent/50 hover:shadow-[0_0_30px_rgba(var(--accent),0.1)] cursor-pointer">
-                  <div className="h-40 sm:h-48 bg-gradient-to-br from-black to-gray-900 relative overflow-hidden flex items-center justify-center border-b border-border/50">
-                    <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent to-transparent" />
-                    <Gamepad2 className="w-12 h-12 sm:w-16 sm:h-16 text-foreground/20 group-hover:text-accent/80 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-12" />
+                  <div className="h-40 sm:h-48 relative overflow-hidden border-b border-border/50">
+                    {project.image ? (
+                      <>
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
+                      </>
+                    ) : (
+                      <div className="h-full w-full bg-gradient-to-br from-black to-gray-900 flex items-center justify-center">
+                        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent to-transparent" />
+                        <Gamepad2 className="w-12 h-12 sm:w-16 sm:h-16 text-foreground/20 group-hover:text-accent/80 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-12" />
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-6 sm:p-8 flex flex-col flex-1">
