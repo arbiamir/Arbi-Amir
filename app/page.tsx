@@ -510,7 +510,7 @@ export default function Portfolio() {
                 description: 'A realistic military truck simulation game featuring physics-based heavy vehicle controls, off-road terrain challenges, and mission-based gameplay objectives.',
                 tech: ['Unity 3D', 'Vehicle Physics', 'C# Scripting', 'AI Traffic System', 'Level Design'],
                 link: 'https://play.google.com/store/apps/details?id=com.gnc.military.truck.simulator.games',
-                image: '/projects/military-truck.png',
+                image: '/projects/military-truck-wide.png',
               },
               {
                 title: 'Car Racing and Stunt Games',
@@ -518,7 +518,7 @@ export default function Portfolio() {
                 description: 'High-octane racing game with stunt mechanics. Implemented smooth car controllers, ramp physics, and dynamic camera systems for cinematic action.',
                 tech: ['Unity', 'Arcade Physics', 'Mobile Optimization'],
                 link: 'https://play.google.com/store/apps/details?id=com.fg.car.racing.stuntgames',
-                image: '/projects/car-racing.png',
+                image: '/projects/car-racing-wide.png',
               },
               {
                 title: 'Offroad Bus Driving Game',
@@ -544,7 +544,7 @@ export default function Portfolio() {
                 className="group h-full"
               >
                 <Card className="h-full border border-border/50 bg-card/40 hover:bg-card/60 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 flex flex-col hover:border-accent/50 hover:shadow-[0_0_30px_rgba(var(--accent),0.1)] cursor-pointer">
-                  <div className="h-40 sm:h-48 relative overflow-hidden border-b border-border/50">
+                  <div className="aspect-video relative overflow-hidden border-b border-border/50">
                     {project.image ? (
                       <>
                         <Image
