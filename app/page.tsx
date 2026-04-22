@@ -521,12 +521,12 @@ export default function Portfolio() {
                 image: '/projects/car-racing-wide.png',
               },
               {
-                title: 'Offroad Bus Driving Game',
+                title: 'Bus Simulation Game',
                 category: 'Simulation',
-                description: 'Comprehensive bus driving simulator focused on realistic passenger transport, traffic AI navigation, and large vehicle handling on difficult tracks.',
+                description: 'Experience a realistic city bus simulator featuring stunning urban environments and various driving modes. Master precision maneuvering through the city to pick up and drop off passengers while showcasing elite driving expertise.',
                 tech: ['Unity 3D', 'AI Traffic', 'C# Scripting', 'Mobile Optimization', 'UI/UX'],
-                link: 'https://play.google.com/store/apps/details?id=com.sg.offroad.bus.driving.game.bus.games.city.bus.game',
-                image: '/projects/offroad-bus.png',
+                link: 'https://play.google.com/store/apps/details?id=com.sg.bus.simulator.offroad.bus.sim',
+                image: '/projects/bus-simulation-game.jpg',
               },
               {
                 title: 'Car Sim Driving Game',
