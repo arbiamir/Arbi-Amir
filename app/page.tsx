@@ -507,23 +507,23 @@ export default function Portfolio() {
               {
                 title: 'Military Truck Driving Games',
                 category: 'Simulation / Vehicle',
-                description: 'A realistic military truck simulation game featuring physics-based heavy vehicle controls, off-road terrain challenges, and mission-based gameplay objectives.',
+                description: 'A military truck driving simulation game featuring heavy vehicles with realistic physics-based controls across challenging offroad terrains, including snow and night environments. Complete mission-based objectives while experiencing army-style training in camps with cinematic sequences that enhance realism and immersion.',
                 tech: ['Unity 3D', 'Vehicle Physics', 'C# Scripting', 'AI Traffic System', 'Level Design'],
                 link: 'https://play.google.com/store/apps/details?id=com.gnc.military.truck.simulator.games',
-                image: '/projects/military-truck-wide.png',
+                image: '/projects/military-truck-game.jpg',
               },
               {
                 title: 'Car Racing and Stunt Games',
                 category: 'Racing / Arcade',
-                description: 'High-octane racing game with stunt mechanics. Implemented smooth car controllers, ramp physics, and dynamic camera systems for cinematic action.',
+                description: 'A racing and stunt-based car game featuring two modes where you can compete against AI cars or perform thrilling stunts. Experience high-speed driving with cinematic stunt sequences, multiple cars, and a reward system that lets you earn coins through races and skill-based challenges.',
                 tech: ['Unity 3D', 'Arcade Physics', 'Stunt Mechanics', 'Level Design', 'VFX Systems'],
                 link: 'https://play.google.com/store/apps/details?id=com.fg.car.racing.stuntgames',
-                image: '/projects/car-racing-wide.png',
+                image: '/projects/car-racing-stunt-games.jpg',
               },
               {
                 title: 'Bus Simulation Game',
                 category: 'Simulation',
-                description: 'Experience a realistic city bus simulator featuring stunning urban environments and various driving modes. Master precision maneuvering through the city to pick up and drop off passengers while showcasing elite driving expertise.',
+                description: 'An offroad bus driving game where you travel through mountains, forests, and muddy tracks while picking up and dropping off passengers safely. The game features dynamic weather conditions and 10 mission-based levels that test your driving control and timing in challenging environments.',
                 tech: ['Unity 3D', 'AI Traffic', 'C# Scripting', 'Mobile Optimization', 'UI/UX'],
                 link: 'https://play.google.com/store/apps/details?id=com.sg.bus.simulator.offroad.bus.sim',
                 image: '/projects/bus-simulation-game.jpg',
@@ -531,10 +531,10 @@ export default function Portfolio() {
               {
                 title: 'Car Sim Driving Game',
                 category: 'Open World Simulation',
-                description: 'Open world driving experience with emphasis on freedom of exploration, realistic car damage, and environmental interaction.',
+                description: 'An open-world car driving game set in a lively city with traffic, pedestrians, and detailed environments. Explore freely while completing boss-based missions with engaging cutscenes, realistic driving controls, and multiple cars to unlock and use.',
                 tech: ['Unity 3D', 'C# Programming', 'Object Pooling', 'Open World Logic', 'Optimization'],
                 link: 'https://play.google.com/store/apps/details?id=com.fg.open.world.car.game',
-                image: '/projects/open-world-car.png',
+                image: '/projects/open-world-car_driving.jpg',
               },
             ].map((project, index) => (
               <motion.div
